@@ -124,11 +124,14 @@ Run the program and choose RTL viewer to get RTL realization.
 
 ### PROGRAM 
 /*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Aishwarya S
 RegisterNumber:  212222100003
+```
 */
 ### SR FLIPFLOP
+```
 module SR(S,R,clk,Q,Qbar);
 input S,R,clk;
 output Q,Qbar;
@@ -138,7 +141,9 @@ nand (Y,R,clk);
 nand (Q,X,Qbar);
 nand (Qbar,Y,Q);
 endmodule
+```
 ### JK FLIPFLOP
+```
 module JK(J,K,clk,Q,Qbar);
 input J,K,clk;
 output Q,Qbar;
@@ -148,7 +153,9 @@ nand (Y,K,clk,Q);
 nand (Q,X,Qbar);
 nand (Qbar,Y,Q);
 endmodule
+```
 ### T FLIPFLOP
+```
 module TF(T,clk,Q,Qbar);
 input T,clk;
 output Q,Qbar;
@@ -158,8 +165,9 @@ nand (R,T,clk,Q);
 nand (Q,S,Qbar);
 nand (Qbar,R,Q);
 endmodule
-
+```
 ### D FLIPFLOP
+```
 module DF(D,clk,Q,Qbar);
 input D,clk;
 output Q,Qbar;
@@ -170,7 +178,7 @@ nand (Y,Dbar,clk);
 nand (Q,X,Qbar);
 nand (Qbar,Y,Q);
 endmodule
-
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ### SR FLIPFLOP
 ![image](https://github.com/Aishwarya-sankar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418444/bd403824-6d9f-4381-ab71-1e2792071a89)
